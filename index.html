@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vin's Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/cafe-logo.png" alt="Logo Vin's Cafe" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#beranda" onclick="showSlide(0)">Home</a></li>
+                <li><a href="#tentang" onclick="showSlide(1)">About Us</a></li>
+                <li><a href="#menu" onclick="showSlide(2)">Menu</a></li>
+                <li><a href="#kontak" onclick="showSlide(3)">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <section class="slide slide-home" id="beranda">
+            <div class="content">
+                <h1 class="header-home">Selamat Datang di Vin's Cafe</h1>
+                <p class="description">Tempat terbaik untuk menikmati kopi dan makanan lezat.</p>
+                <p class="description">Kami menghadirkan suasana yang nyaman dan santai, cocok untuk menghabiskan waktu bersama teman dan keluarga. Nikmati berbagai pilihan kopi spesial yang diracik oleh barista profesional kami, serta hidangan yang disiapkan dengan bahan-bahan berkualitas tinggi.</p>
+                <p class="description">Vin's Cafe tidak hanya menyajikan minuman dan makanan, tetapi juga pengalaman yang tak terlupakan. Kami berkomitmen untuk memberikan pelayanan terbaik kepada setiap pelanggan kami.</p>
+            </div>
+        </section>
+        
+        <section class="slide slide-about" id="tentang">
+            <div class="content">
+                <h1 class="header-about">Vin's Cafe?</h1>
+                <img src="images/cafe-logo.png" alt="Logo Vin's Cafe" class="logo-tentang">
+                <p class="description">Vin's Cafe didirikan pada tahun 2024 dengan tujuan menyajikan kopi berkualitas tinggi dan makanan lezat kepada para pelanggan.</p>
+                <p class="description">Sejak awal berdiri, kami selalu berupaya untuk memberikan yang terbaik, mulai dari pemilihan biji kopi hingga proses penyajiannya. Kami percaya bahwa setiap cangkir kopi memiliki cerita dan kami ingin berbagi cerita tersebut dengan Anda.</p>
+                <p class="description">Selain kopi, kami juga menawarkan berbagai macam kue dan makanan ringan yang dibuat dengan resep rahasia keluarga. Dengan suasana yang hangat dan ramah, Vin's Cafe menjadi tempat favorit untuk bersantai dan menghabiskan waktu.</p>
+                <p class="description">Misi kami adalah menciptakan tempat di mana setiap orang merasa diterima dan dapat menikmati momen spesial mereka. Kami berterima kasih atas dukungan Anda dan berharap dapat terus melayani Anda di masa mendatang.</p>
+            </div>
+        </section>
+        
+        <section class="slide slide-menu" id="menu">
+            <div class="content">
+                <h1 class="header-menu">Menu yang ada apa aja yaa?</h1>
+                <div class="menu-item">
+                    <img src="images/menu-1.jpg" alt="Menu 1">
+                    <h2>Kopi Spesial</h2>
+                    <p class="description">Kopi Arabika pilihan dengan cita rasa unik.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/menu-2.jpg" alt="Menu 2">
+                    <h2>Kue Coklat</h2>
+                    <p class="description">Kue coklat yang lembut dan manis, cocok untuk teman minum kopi.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="slide slide-contact" id="kontak">
+            <div class="content">
+                <h1 class="header-contact">Hubunginya dari mana ya?</h1>
+                <p class="description">Jika Anda memiliki pertanyaan atau ingin mengetahui lebih lanjut tentang Vin's Cafe, jangan ragu untuk menghubungi kami melalui WhatsApp.</p>
+                <p class="description">Anda bisa menghubungi kami di nomor <a href="https://wa.me/6283801718260" target="_blank">+62 838-1710-8260</a> untuk informasi lebih lanjut. Kami siap melayani Anda!</p>
+            </div>
+        </section>
+        
+        <section class="slide slide-exit" id="keluar">
+            <div class="content">
+                <button onclick="keluarWebsite()">Keluar</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vin's Cafe. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function keluarWebsite() {
+            window.close();
+        }
+
+        // Show the first slide initially
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(0);
+        });
+    </script>
+</body>
+</html>
