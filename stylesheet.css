@@ -1,0 +1,148 @@
+body {
+    .spicy-rice-regular {
+        font-family: "Spicy Rice", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 50px;
+  margin-left: 20px;
+}
+
+.logo-tentang {
+    height: 100px;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.slide {
+    display: none;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slide-home {
+    background-color: #e8f5e9; /* Light Green */
+}
+
+.slide-about {
+    background-color: #e3f2fd; /* Light Blue */
+}
+
+.slide-menu {
+    background-color: #ffebee; /* Light Red */
+}
+
+.slide-contact {
+    background-color: #fff3e0; /* Light Orange */
+}
+
+.content {
+    text-align: center;
+}
+
+.description {
+    font-family: 'Spicy Rice', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 0;
+    padding: 10px;
+    color: white;
+}
+
+.header-home {
+    background-color: #4CAF50; /* Green */
+}
+
+.header-about {
+    background-color: #2196F3; /* Blue */
+}
+
+.header-menu {
+    background-color: #f44336; /* Red */
+}
+
+.header-contact {
+    background-color: #FF9800; /* Orange */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
